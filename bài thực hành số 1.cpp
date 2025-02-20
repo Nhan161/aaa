@@ -6,7 +6,7 @@
 
 DHT dht(15, DHT11);
 WiFiClient wc;
-const char* ssid = "PTIT_WIFE";
+const char* ssid = "PTIT_WIFI";
 const char* pass = "";
 
 int channel = 1;
@@ -36,7 +36,7 @@ void loop() {
   float t = dht.readTemperature();
   if (isnan(h)||isnan(t))
   {
-    Serial.println(F("dell co"));
+    Serial.println(F("khong co"));
   }
 
   Serial.println(F("do am: "));
